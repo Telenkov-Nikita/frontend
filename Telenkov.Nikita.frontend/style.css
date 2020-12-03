@@ -1,0 +1,238 @@
+body {
+  color: white;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  border-style: solid;
+  border-color: white;
+  border: 6px solid #ffffff;
+  width: 100%;
+  min-width: 360px;
+  overflow-x: hidden;
+  display: grid;
+}
+
+.bg {
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  /* width: 100%;
+  height: 665px; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  /* justify-content: center; */
+  height: 80px;
+  width: 100%;
+}
+.right {
+  margin-left: 150px;
+}
+
+.left {
+  justify-content: left;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  color: rgb(255, 36, 226);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  margin-left: 50px;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 740px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 95%;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: rgb(255, 36, 226);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.myButton {
+  background-color: transparent;
+  border: 3px solid #e0e0e0;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 15px 50px;
+  font-size: 16px;
+}
+.myButton:hover,
+.myButton.active {
+  color: rgb(216, 49, 250);
+}
+
+.firstBlock {
+  font-weight: 600;
+  font-size: 48px;
+  padding-left: 85px;
+  padding-top: 95px;
+  padding-bottom: 30px;
+}
+
+.myBtn {
+  border-style: none;
+  background-color: cornsilk;
+  display: inline-block;
+  cursor: pointer;
+  color: rgba(11, 0, 51, 0.829);
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 130px;
+}
+
+.myBtn:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.secondBlock {
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  height: auto;
+  margin-left: 85px;
+  margin-top: -100px;
+}
+
+.define {
+  color: rgba(11, 0, 51, 0.829);
+  max-width: 270px;
+  min-width: 170px;
+  float: left;
+  margin-top: 65px;
+  margin-left: 70px;
+}
+
+.strategy {
+  color: rgba(11, 0, 51, 0.829);
+  max-width: 270px;
+  min-width: 170px;
+  float: left;
+  margin-top: 65px;
+  margin-left: 60px;
+}
+
+.build {
+  color: rgba(11, 0, 51, 0.829);
+  max-width: 270px;
+  min-width: 170px;
+  float: left;
+  margin-top: 65px;
+  margin-left: 60px;
+}
+
+.secondBlock i {
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+
+.thirdBlock {
+  background-image: url(./img/vl.png);
+  width: 100%;
+  height: 150%;
+  margin-left: 85px;
+}
+
+@media (max-width: 1045px) {
+  .secondBlock .thirdBlock {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 700px) {
+  .secondBlock .thirdBlock {
+    width: 100%;
+  }
+}
+
+.thirdBlock p {
+  font-size: 48px;
+  font-weight: 700;
+  color: #100d1f;
+  padding-top: 85px;
+  margin-left: 70px;
+  margin-right: 75px;
+  float: left;
+}
+
+.thirdBlock article {
+  padding-top: 85px;
+  color: #100d1f;
+  margin-left: 70px;
+  float: left;
+  max-width: 370px;
+  min-width: 70px;
+}
